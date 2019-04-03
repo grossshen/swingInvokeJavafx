@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#loginButton").click(function(){
+                $.ajax({
+                    url: "http://localhost:8080/hello"
+                });
+            });
+        });
+    </script>
+</head>
+<body style="width:200px; margin:0 auto;">
+    <h1>这是右边的界面</h1>
+    <button id="openLeftButton">打开左边的界面</button>
+</body>
+</html>
