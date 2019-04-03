@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.web.*?>
 <?import java.lang.*?>
@@ -10,18 +11,18 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.Controller">
+<VBox alignment="center" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <HBox fx:id="hboxUp" prefHeight="-1.0">
          <children>
-            <WebView fx:id="webViewLeft" prefHeight="200.0" prefWidth="200.0" />
-            <WebView fx:id="webViewRight" prefHeight="200.0" prefWidth="200.0" />
+            <WebView fx:id="webViewLeft" prefHeight="600.0" prefWidth="450.0" />
+            <Separator fx:id="separator" orientation="VERTICAL" prefHeight="200.0" />
+            <WebView fx:id="webViewRight" prefHeight="600.0" prefWidth="450.0" />
          </children>
       </HBox>
-      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+      <HBox fx:id="circleHbox" alignment="CENTER_RIGHT">
          <children>
-            <Circle fx:id="circle" fill="#ff1f1f" radius="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fx:id="circle" fill="#ff1f1f" onMouseClicked="#showOrHideWebview" radius="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
          </children>
       </HBox>
    </children>

@@ -44,10 +44,14 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         stage=primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("/static/javafxml/main.fxml"));
+
+        root.setStyle("-fx-background-color: rgba(0,0,0,0.0);");
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.setAlwaysOnTop(true);
         primaryStage.setTitle("ultraSonic");
-        primaryStage.setScene(new Scene(root));
+        Scene scene = new Scene(root);
+        scene.setFill(null);
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
