@@ -125,11 +125,11 @@ public class Controller implements Initializable{
 
 
 
-
-    @GetMapping("/openLeftWebview")
-    public void openleftWebview(){
-        webViewLeft.setVisible(true);
-        webViewLeft.setDisable(false);
-//        System.out.println("接口调用正常");
-    }
+//
+//    @GetMapping("/openLeftWebview")
+//    public void openleftWebview(){
+//        webViewLeft.setVisible(true);
+//        webViewLeft.setDisable(false);
+////        System.out.println("接口调用正常");
+//    }
 }

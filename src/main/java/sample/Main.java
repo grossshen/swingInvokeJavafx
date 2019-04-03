@@ -21,6 +21,7 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import org.junit.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -55,6 +56,10 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    @Test
+    public void test(){
+        System.out.println(stage);
+    }
 
     public static void main(String[] args) {
         launch(args);

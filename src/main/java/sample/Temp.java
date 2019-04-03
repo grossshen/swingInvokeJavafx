@@ -7,6 +7,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+import org.junit.Test;
 
 
 /**
@@ -37,5 +38,10 @@ public class Temp extends Application {
     }
     public static void main(String[] args){
         launch(args);
+    }
+    @Test
+    public void test(){
+        System.out.println("");
+
     }
 }

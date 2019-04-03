@@ -15,9 +15,9 @@
    <children>
       <HBox fx:id="hboxUp" prefHeight="-1.0">
          <children>
-            <WebView fx:id="webViewLeft" prefHeight="600.0" prefWidth="450.0" />
+            <WebView fx:id="webViewLeft" prefHeight="400.0" prefWidth="400.0" />
             <Separator fx:id="separator" orientation="VERTICAL" prefHeight="200.0" />
-            <WebView fx:id="webViewRight" prefHeight="600.0" prefWidth="450.0" />
+            <WebView fx:id="webViewRight" prefHeight="400.0" prefWidth="200.0" />
          </children>
       </HBox>
       <HBox fx:id="circleHbox" alignment="CENTER_RIGHT">

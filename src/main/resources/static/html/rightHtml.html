@@ -6,7 +6,7 @@
     <script src="../jquery.js"></script>
     <script>
         $(document).ready(function() {
-            $("#openLeftButton").click(function(){
+            $(".openLeftButton").click(function(){
                 $.ajax({
                     url: "http://localhost:8080/openLeftWebview"
                 });
@@ -16,6 +16,9 @@
 </head>
 <body style="width:200px; margin:0 auto;">
     <h1>这是右边的界面</h1>
-    <button id="openLeftButton">打开左边的界面</button>
+    <button class="openLeftButton">打开左边的界面</button>
+    <button class="openLeftButton">打开左边的界面1</button>
+    <button class="openLeftButton">打开左边的界面2</button>
+    <button class="openLeftButton">打开左边的界面3</button>
 </body>
 </html>
