@@ -3,6 +3,7 @@ package sample;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -45,7 +46,8 @@ public class NewMain extends Application{
     @Override
     public void init(){
         //启动springboot
-        SpringApplication.run(Main.class);
+        ConfigurableApplicationContext applicationContext=SpringApplication.run(Main.class);
+//        new FXMLLoader().setControllerFactory(applicationContext::getBean);
     }
     @Override
     public void start(Stage primaryStage) throws Exception {

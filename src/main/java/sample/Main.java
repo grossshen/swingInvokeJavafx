@@ -39,6 +39,7 @@ public class Main extends Application {
     public void init(){
         //springboot 启动
         ConfigurableApplicationContext applicationContext = SpringApplication.run(Main.class);
+        new FXMLLoader().setControllerFactory(applicationContext::getBean);
     }
 
     @Override
